@@ -21,7 +21,7 @@ router.post('/', function(req, res) {
 
 // See all swords GET swordS
 router.get('/', function(req, res) {
-  Swords.find({}, function(err, swords) {
+  Swords.find({}, function(err, sword) {
     if (err) {
       res.send(err);
     }
